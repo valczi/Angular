@@ -1,0 +1,35 @@
+<li [ngClass]=" { 'list-group-item': true }">
+    <div class="row">
+        <div class="col-2">
+            <img class="affiche" [src]="kirbyImgLink">
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <h3>Jeu : {{ kirbyNom_jeu }}</h3>
+                </div>
+                <div class="col-12 col-sm-6">
+                    Date de sortie: {{ kirbyYear }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    Producteur: {{kirbyProducter}} <br> Devlopper: {{kirbyDevelopper}}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12">
+                    Résumé: <br>
+                    <div class="text-justify">
+                        {{kirbyResume}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <a [routerLink]="['/modif', id]" class="btn btn-warning">M</a>
+            <button class="btn btn-danger" (click)="suppr()">X</button>
+        </div>
+    </div>
+</li>

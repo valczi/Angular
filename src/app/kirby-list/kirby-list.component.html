@@ -1,0 +1,3 @@
+<ul class="list-group" *ngIf="kirbys">
+    <app-kirby *ngFor="let kirby of kirbys; let i = index" [kirbyDevelopper]="kirby.developper" [kirbyImgLink]="kirby.imgLink" [kirbyNom_jeu]="kirby.nom_jeu" [kirbyProducter]="kirby.producter" [kirbyResume]="kirby.resume" [kirbyYear]="kirby.year" [id]="kirby.id"></app-kirby>
+</ul>

@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {FilmService} from "./services/film/film.service";
 import {interval} from "rxjs";
 
 @Component({
@@ -11,7 +10,7 @@ export class AppComponent implements OnInit {
   title = 'my Cinema';
   films: any = [];
   time: number=0;
-  constructor(private Film: FilmService) {
+  constructor() {
   }
 
   ngOnInit() {
